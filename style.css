@@ -1,0 +1,224 @@
+  /*背景顏色*/
+body {
+    background-color: #faf4e2;
+  }
+
+  /* 圓餅圖 style*/
+  
+.chart-container {
+    border: 1px solid #333;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    margin: 20px;
+    top: 150px;
+    left: 30px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+svg.chart-container {
+    margin: auto;
+    display: block;
+    
+}
+  /*報紙線條*/
+.line {
+    border: none;
+    border-top: 5px solid black;
+    height: 0;
+    width: 1400px;
+    position: absolute;
+    top: 16%;
+    left:2%
+   
+  }
+
+  /* 標題style*/
+
+h1 {
+    text-align: center;
+    font-size: 96px;
+    color: #333;
+    margin-top: 30px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+h2{
+    font-size:xxlarger;
+    color:#333;
+    margin-top: 50px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: right;
+    position: absolute;
+    top: 50px;
+    right: 70px;
+}
+
+h3{
+    font-size:108px;
+    color:#333;
+    margin-top:50px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: right;
+    position:absolute;
+    top:780px;
+    left:27px;
+}
+
+h4{
+    font-size:64px;
+    color:#333;
+    margin-top:50px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position:absolute;
+    top :450px;
+    right:470px;
+}
+h5{
+    font-size: 50px;
+    color:#333;
+    margin-top:50px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position:absolute;
+    top :550px;
+    right:400px;
+}
+h6{
+    font-size: 64px;
+    color:#333;
+    margin-top:50px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position:absolute;
+    top :650px;
+    right:350px;
+}
+
+
+.katy-image img{
+    float:right;
+    width: 300px;
+    height: auto;
+    margin:20px;
+}
+
+/* katy perry 專輯*/
+
+
+.katy-image {
+    position: absolute;
+    right:20px;
+    top:450px;
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px;
+
+    ;
+  }
+
+  .katy-image p {
+    position: relative;
+    top: 310px;
+    left: -60px;
+    width: 300px; 
+    white-space: nowrap; /* 禁止文本換行 */
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  
+
+
+
+/*justin專輯*/
+
+  .justin-image {
+    position: relative;
+    display: inline-block;
+    left: 700px;;
+    top:-55px;
+
+  }
+
+  .justin-image p {
+    position: relative;
+    top: -13px;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  /*時區標籤*/
+  
+  .timing{
+    font-size :56px;
+    color:#333;
+    margin-top:50px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position:absolute;
+    position:absolute;
+    top :300px;
+    right:30px;
+    font-weight:bolder;
+
+}
+
+   
+  /*時間style*/
+  .time{
+    
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 64px;
+        color: #333;
+        margin-top: 50px;
+        text-align: right;
+        position:absolute;
+        right: 100px;
+        top: 150px;
+        font-weight:bolder;
+  }
+
+  
+    
+    /* analysis style!!*/
+
+    /* 框 */
+    svg{
+        border: 2px solid #333;
+        }
+        .axis.domain{
+        stroke:none;
+        }
+        .x line{
+        stroke:#333;
+        }
+
+    /*位置*/
+    .chart-container1,
+    .chart-container2,
+    .chart-container3,
+    .chart-container4 {
+      position: absolute;
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    
+    .chart-container1 {
+      left: 28px;
+      top:1000px;
+     
+    }
+    
+    .chart-container2 {
+      left: 28px;
+      top: 1400px; 
+    }
+    
+    .chart-container3 {
+      right: 28px; 
+      top: 1000px;
+    }
+    
+    .chart-container4 {
+      right:28px;
+      top:1400px; 
+    }
+    
