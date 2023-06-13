@@ -26,7 +26,7 @@ svg.chart-container {
     border: none;
     border-top: 5px solid black;
     height: 0;
-    width: 1400px;
+    width: 96%;
     position: absolute;
     top: 16%;
     left:2%
@@ -37,9 +37,9 @@ svg.chart-container {
 
 h1 {
     text-align: center;
-    font-size: 96px;
+    font-size:96px;
     color: #333;
-    margin-top: 30px;
+    margin-top: 10px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     position:absolute;
     top:0%;
@@ -54,47 +54,47 @@ h2{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: right;
     position: absolute;
-    top: 5%;
+    top: 4%;
     right: 5%;
 }
 
 .word{
-    font-size:108px;
+    font-size:96px;
     color:#333;
     margin-top:50px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: right;
     position:absolute;
-    top:95%;
-    left:27px;
+    top:100%;
+    left:3%;
 }
 
 .word2{
-    font-size:64px;
+    font-size:56px;
     color:#333;
     margin-top:50px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     position:absolute;
-    top :55%;
+    top :60%;
     right:35%;
 }
 h5{
-    font-size: 50px;
+    font-size: 42px;
     color:#333;
     margin-top:50px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     position:absolute;
-    top :67%;
+    top :70%;
     right:30%;
 }
 h6{
-    font-size: 64px;
+    font-size: 56px;
     color:#333;
     margin-top:50px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     position:absolute;
     top :80%;
-    right:25%;
+    right:27%;
 }
 
 
@@ -110,8 +110,8 @@ h6{
 
 .katy-image {
     position: absolute;
-    right:20px;
-    top:450px;
+    right:2%;
+    top:60%;
     display: inline-block;
     text-align: center;
     margin-top: 20px;
@@ -138,7 +138,7 @@ h6{
   .justin-image {
     position: absolute;
     display: inline-block;
-    left: 700px;;
+    left:48%;
     top:20%;
 
   }
@@ -159,8 +159,8 @@ h6{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     position:absolute;
     position:absolute;
-    top :300px;
-    right:30px;
+    top :38%;
+    right:5%;
     font-weight:bolder;
 
 }
@@ -175,8 +175,8 @@ h6{
         margin-top: 50px;
         text-align: right;
         position:absolute;
-        right: 100px;
-        top: 150px;
+        right:8%;
+        top: 20%;
         font-weight:bolder;
   }
 
@@ -194,7 +194,7 @@ body {
 }
 .bar-chart-container{
   position:absolute;
-  top:120% !important;
+  top:135% !important;
 }
 
 h3 {
@@ -230,25 +230,25 @@ button{
 /* button 就位！*/
 .theone{
   position: absolute;
-  top:130%;
+  top:140%;
   right:30%;
 }
 .thetwo{
   position:absolute;
-  top:160%;
+  top:180%;
   right:30%;
 
 }
 
 .thethree{
   position:absolute;
-  top:130%;
+  top:140%;
   right:10%;
 
 }
 .thefour{
   position:absolute;
-  top:160%;
+  top:180%;
   right:10%;
 
 }
@@ -293,3 +293,11 @@ button:focus {
   .tip-info:nth-of-type(even){
   background: #e0e0e0;
   }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+ 
