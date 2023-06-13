@@ -1,4 +1,4 @@
-d3.csv("https://raw.githubusercontent.com/tzuie99/final/main/data/Spotify_Youtube.csv").then(
+d3.csv("/data/Spotify_Youtube.csv").then(
     data => {
     // 資料處理
     data.forEach(function (d) {
@@ -127,7 +127,7 @@ import {
 } from "./func/preprocess.js";
 
 
-d3.csv("https://raw.githubusercontent.com/tzuie99/final/main/data/Spotify_Youtube.csv", type).then(
+d3.csv("/data/Spotify_Youtube.csv", type).then(
     res => {
         const filtered = filterData(res);
         const processed = preprocess(filtered);
