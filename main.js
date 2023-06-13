@@ -1,4 +1,4 @@
-d3.csv("https://github.com/tzuie99/final/blob/main/data/Spotify_Youtube.csv").then(
+d3.csv("https://raw.githubusercontent.com/tzuie99/final/main/data/Spotify_Youtube.csv").then(
     data => {
     // 資料處理
     data.forEach(function (d) {
@@ -110,48 +110,34 @@ d3.csv("https://github.com/tzuie99/final/blob/main/data/Spotify_Youtube.csv").th
         .text(title);
 });
 
-d3.csv("https://github.com/tzuie99/final/blob/main/data/Spotify_Youtube.csv",type).then(
+
+import {
+    prepareChartData,
+    processMap
+} from "./func/converter.js";
+
+import {
+    setupCanvas_teach
+} from "./func/plot.js";
+
+import {
+    type,
+    filterData,
+    preprocess
+} from "./func/preprocess.js";
+
+
+d3.csv("https://raw.githubusercontent.com/tzuie99/final/main/data/Spotify_Youtube.csv", type).then(
     res => {
         const filtered = filterData(res);
         const processed = preprocess(filtered);
         const prepared = prepareChartData(processed);
-        
-        const energyData = processMap(prepared, "energy");
-        const loudnessData = processMap(prepared, "loudness");
-        const valenceData = processMap(prepared, "valence");
-        const tempoData = processMap(prepared, "tempo");
-        
-        setupCanvas(
-            energyData, 
-            "chart-container1", 
-            "Relation Between Danceability and Energy",
-            "Energy: (0 ~ 1)",
-            "CadetBlue"
-            );
-        setupCanvas(
-            loudnessData, 
-            "chart-container2", 
-            "Relation Between Danceability and Loudness",
-            "Loudness: (0 ~ 60) dB",
-            "SteelBlue");
-        setupCanvas(
-            valenceData, 
-            "chart-container3", 
-            "Relation Between Danceability and valence",
-            "Valence: (0 ~ 1)",
-            "SkyBlue");
-        setupCanvas(
-            tempoData, 
-            "chart-container4", 
-            "Relation Between Danceability and Tempo",
-            "Tempo: bpm",
-            "CornflowerBlue"
-            );
+
+        const data = processMap(prepared);
+        console.log(data);
+        setupCanvas_teach(data, filtered);
     }
 );
-
-
-
 
 //time get!!
 // 獲取當前時間
@@ -187,16 +173,4 @@ function getCurrentTime() {
   setInterval(updateTime, 1000);
   
 
-  import {
-    prepareChartData,
-    processMap
-} from "./func/converter.js";
-import {
-    setupCanvas
-} from "./func/plot.js";
-import {
-    type,
-    filterData,
-    preprocess
-} from "./func/preprocess.js";
-
+  

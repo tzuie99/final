@@ -18,13 +18,24 @@ export function prepareChartData(data) {
     return dataMap;
 }
                     
-export function processMap(mapArray, dataKey) {
-    const temp = [];
-    for (let [key, val] of mapArray[dataKey]) {
-        temp.push({
-            danceability: key,
-            val: val
-        });
+export function processMap(mapArray) {
+    let temp = [];
+    const dataKey = [
+        "energy",
+        "loudness",
+        "valence",
+        "tempo"
+    ];
+
+    for (var i = 0; i < 10; i++) {
+        temp.push(new Map());
+        temp[i]["danceability"] = i;
     }
+    for (var i = 0; i < 4; i++) {
+        for (let [key, val] of mapArray[dataKey[i]]) {
+            temp[key][dataKey[i]] = val;
+        }
+    }
+    temp.sort((a, b) => b["danceability"] - a["danceability"])
     return temp;
 }

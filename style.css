@@ -58,7 +58,7 @@ h2{
     right: 5%;
 }
 
-h3{
+.word{
     font-size:108px;
     color:#333;
     margin-top:50px;
@@ -69,7 +69,7 @@ h3{
     left:27px;
 }
 
-h4{
+.word2{
     font-size:64px;
     color:#333;
     margin-top:50px;
@@ -182,46 +182,114 @@ h6{
 
   
     
-    /* analysis style!!*/
+/* analysis style!!*/
+  /*
+0.4rem: 0.4 "relatively"
+*/
 
-    /* 框 */
-    svg{
-        border: 2px solid #333;
-        }
-        .axis.domain{
-        stroke:none;
-        }
-        .x line{
-        stroke:#333;
-        }
+body {
+  font-weight: bold;
+  margin: 2rem;
 
-    /*位置*/
-    .chart-container1,
-    .chart-container2,
-    .chart-container3,
-    .chart-container4 {
-      position: absolute;
-      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    }
-    
-    .chart-container1 {
-      left: 28px;
-      top:1000px;
-     
-    }
-    
-    .chart-container2 {
-      left: 28px;
-      top: 1400px; 
-    }
-    
-    .chart-container3 {
-      right: 28px; 
-      top: 1000px;
-    }
-    
-    .chart-container4 {
-      right:28px;
-      top:1400px; 
-    }
-    
+}
+.bar-chart-container{
+  position:absolute;
+  top:120% !important;
+}
+
+h3 {
+  font-weight: 500;
+  color: #555;
+  margin: 0.4rem 0;
+}
+
+svg {
+  border: 3px solid #333;
+  }
+  .axis .domain{
+  stroke:black;
+  }
+  .x line{
+  stroke: rgb(7, 7, 7);
+  }
+
+button{
+  font-size: 28px;
+  outline: none;
+  color: #555;
+  border-color: #d7d70d;
+  background: #fefefe;
+  /*padding: 3px 0px;*/
+  width: 150px ;
+  height: 75px;
+  text-align: center;
+  transition: all 200ms;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* button 就位！*/
+.theone{
+  position: absolute;
+  top:130%;
+  right:30%;
+}
+.thetwo{
+  position:absolute;
+  top:160%;
+  right:30%;
+
+}
+
+.thethree{
+  position:absolute;
+  top:130%;
+  right:10%;
+
+}
+.thefour{
+  position:absolute;
+  top:160%;
+  right:10%;
+
+}
+button:hover {
+  background: rgb(145, 221, 169);
+}
+
+button:focus {
+  background: lightpink;
+}
+
+/* interactive 詳細資訊視窗設定 */
+.tooltip{
+  position: fixed;
+  opacity: 0;
+  pointer-events: none;
+  /*避免出現連結或其他預設行為*/
+  background: #eee;
+  max-width: 200px;
+  }
+  .tip-header{
+  border-bottom: 2px solid white;
+  padding: 0.9rem 1rem;
+  }
+  .tip-body{
+  padding: 0.2rem 0;
+  }
+  h3,h4{
+  font-size:xx-large;
+  color:#555;
+  margin: 0;
+  }
+  h4{
+  font-weight: normal;
+  }
+  .tip-info{
+  margin: 0;
+  padding: 0.3rem 1em;
+  font-size: 0.8em;
+  }
+  /*偶數元素設定不同背景樣式*/
+  .tip-info:nth-of-type(even){
+  background: #e0e0e0;
+  }
