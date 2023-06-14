@@ -185,7 +185,7 @@ import "https://unpkg.com/d3@7.8.2";
 
 const cfg = {
     data: {
-        path: "../data/Spotify_Youtube.csv",
+        path: "https://raw.githubusercontent.com/tzuie99/final/main/data/Spotify_Youtube.csv",
         filter: d =>
             d.yt_views > 100000000 &&
             d.yt_likes > 0         &&
