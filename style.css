@@ -294,10 +294,84 @@ button:focus {
   background: #e0e0e0;
   }
 
+
   .container {
     display: flex;
     justify-content: center;
     align-items: center;
   }
+
+/* bubble*/
+
+.thebubble{
+    font-size:64px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #333;
+    position:absolute;
+    top:215%;
+    left:2%
+
+}
+  #bubble-chart-container svg
+{
+    /* Border can be modified or removed. */
+    border: 1px solid #ccc;
+    position: absolute;
+    top:220%;
+    right:2%;
+}
+
+#bubble-chart-container svg .header
+{
+    font-size: 1.8rem;
+    font-weight: bolder;
+}
+
+#bubble-chart-container svg .header .secondary
+{
+    font-size: 1.2rem;
+    font-weight: normal;
+    fill: #555;
+}
+
+#bubble-chart-container svg .bubble {
+    stroke-width: 2px;
+    stroke: white;
+}
+
+#bubble-chart-container svg .bubble:hover {
+    stroke: #444;
+}
+
+#bubble-chart-container .legend .circle {
+    stroke: #222;
+    fill: none;
+}
+
+#bubble-chart-container .legend .segment {
+    stroke: #222;
+    stroke-dasharray: 2, 2;
+}
+
+#bubble-chart-container .legend .text {
+    font-size: 0.7rem;
+    fill: #555;
+}
+
+#bubble-chart-tooltip {
+    position: fixed;
+    opacity: 0;
+    pointer-events: none;
+    background-color: #222;
+    color: #eee;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+
+#bubble-chart-tooltip .tip-row {
+    margin: 0rem;
+    padding: 0.3rem 0.5rem;
+    font-size: 0.8rem;
+}
   
  
